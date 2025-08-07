@@ -1,0 +1,135 @@
+/* Home.css */
+
+.home-container {
+    background-color: white;
+    padding-top: 6rem; /* py-24 */
+    padding-bottom: 6rem;
+  }
+  
+  @media (min-width: 640px) {
+    .home-container {
+      padding-top: 8rem; /* sm:py-32 */
+      padding-bottom: 8rem;
+    }
+  }
+  
+  .home-grid {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80rem; /* max-w-7xl */
+    display: grid;
+    gap: 5rem; /* gap-20 */
+    padding-left: 1.5rem; /* px-6 */
+    padding-right: 1.5rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .home-grid {
+      padding-left: 2rem; /* lg:px-8 */
+      padding-right: 2rem;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .home-grid {
+      grid-template-columns: repeat(3, 1fr); /* xl:grid-cols-3 */
+    }
+  }
+  
+  .home-title {
+    font-size: 1.875rem; /* text-3xl */
+    font-weight: 600; /* font-semibold */
+    color: #111827; /* text-gray-900 */
+    letter-spacing: -0.01em;
+  }
+  
+  @media (min-width: 640px) {
+    .home-title {
+      font-size: 2.25rem; /* sm:text-4xl */
+    }
+  }
+  
+  .home-description {
+    margin-top: 1.5rem; /* mt-6 */
+    font-size: 1.125rem;
+    line-height: 2rem;
+    color: #4b5563; /* text-gray-600 */
+  }
+  
+  .people-list {
+    display: grid;
+    gap: 3rem 2rem; /* gap-x-8 gap-y-12 */
+  }
+  
+  @media (min-width: 640px) {
+    .people-list {
+      grid-template-columns: repeat(2, 1fr);
+      gap-row: 4rem;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .people-list {
+      grid-column: span 2 / span 2; /* xl:col-span-2 */
+    }
+  }
+  
+  .person {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* gap-x-6 */
+  }
+  
+  .person-img {
+    width: 6rem; 
+    height: 6rem;
+    border-radius: 9999px;
+    outline: 1px solid rgba(0, 0, 0, 0.05);
+    outline-offset: -1px;
+  }
+
+  /* .person-img {
+    width: 4rem;
+    height: 4rem;
+  } */
+  
+  @media (min-width: 768px) {
+    .person-img {
+      width: 6rem;
+      height: 6rem;
+    }
+  }
+  
+  .person-name {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    color: #111827; /* text-gray-900 */
+  }
+  
+  .person-role {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    color: #4f46e5; /* text-indigo-600 */
+  }
+  
+  .person-contact {
+    font-size: 0.875rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+    color: #4f46e5; /* text-indigo-600 */
+  }
+  .whatsapp-link {
+    display: inline-block;
+    margin-top: 0.25rem;
+    font-size: 0.875rem;
+    color: #25d366; /* WhatsApp green */
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .whatsapp-link:hover {
+    text-decoration: underline;
+  }
+  
