@@ -1,5 +1,5 @@
 import React from 'react'
-import '../styles/home.css'; // ✅ This imports the styles
+import '../styles/Home.css'; // ✅ This imports the styles
 
 function Home() {
   const people = [
